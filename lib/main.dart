@@ -18,12 +18,34 @@ class MyApp extends StatelessWidget {
           children: [
             Flexible(
               flex: 1,
-              child: Container(
-                color: Colors.red,
+              child: Row(
+                children: [
+                  Flexible(
+                    flex: 1,
+                    child: Container(
+                      margin: EdgeInsets.all(5),
+                      color: Colors.red,
+                    ),
+                  ),
+                  Flexible(
+                    flex: 1,
+                    child: Container(
+                      margin: EdgeInsets.all(5),
+                      color: Colors.green,
+                    ),
+                  ),
+                  Flexible(
+                    flex: 1,
+                    child: Container(
+                      margin: EdgeInsets.all(5),
+                      color: Colors.purple,
+                    ),
+                  ),
+                ],
               ),
             ),
             Flexible(
-              flex: 2,
+              flex: 1,
               child: Container(
                 color: Colors.amber,
               ),
